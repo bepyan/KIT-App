@@ -1,0 +1,23 @@
+.button{
+	-fx-background-color: #FFF;
+	-fx-font-family: "Hancom Gothic";
+	-fx-font-size: 18;
+}
+.button:hover{
+	-fx-background-color:  radial-gradient(center 50% 50% , radius 60%, #ececed,  #FFF);
+}
+#root{
+	-fx-background-color: #03A9F4;
+	-fx-border-color: #ececed;
+}
+#id{
+	-fx-font-family: "Calibri";
+	-fx-font-size: 20;
+	-fx-text-fill: #FFF;
+}
+#pw{
+	-fx-font-family: "Calibri";
+	-fx-font-size: 17;
+	-fx-text-fill: #FFF;
+	
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="title" layoutX="14.0" layoutY="14.0" text="개발자" />
+      <VBox layoutX="138.0" layoutY="77.0" spacing="10.0">
+         <children>
+            <HBox spacing="20.0">
+               <children>
+                  <Label id="stitle" text="김민재" />
+                  <Label id="stitle" text="20160186" />
+                  <Label id="stitle" text="카드 결제 담당" />
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Label id="stitle" text="김인환" />
+                  <Label id="stitle" text="20160304" />
+                  <Label id="stitle" text="막내 담당" />
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Label id="stitle" text="김평안" />
+                  <Label id="stitle" text="20160375" />
+                  <Label id="stitle" text="디자이너" />
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Label id="stitle" text="신동헌" />
+                  <Label id="stitle" text="20160668" />
+                  <Label id="stitle" text="팀장님.. 치킨 쏩니다" />
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Label id="stitle" text="이지우" />
+                  <Label id="stitle" text="20171359" />
+                  <Label id="stitle" text="간식 장소 제공" />
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Label id="stitle" text="장민준" />
+                  <Label id="stitle" text="20161032" />
+                  <Label id="stitle" text="서버 그 자체" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="138.0" layoutY="354.0" spacing="5.0">
+         <children>
+            <ImageView>
+               <image>
+                  <Image url="@../util/image/ours/icons8-deadpool-50.png" />
+               </image>
+            </ImageView>
+            <ImageView>
+               <image>
+                  <Image url="@../util/image/ours/icons8-groot-50.png" />
+               </image>
+            </ImageView>
+            <ImageView>
+               <image>
+                  <Image url="@../util/image/ours/icons8-batman-50-2.png" />
+               </image>
+            </ImageView>
+            <ImageView>
+               <image>
+                  <Image url="@../util/image/ours/icons8-rick-sanchez-50.png" />
+               </image>
+            </ImageView>
+            <ImageView>
+               <image>
+                  <Image url="@../util/image/ours/icons8-jake-50.png" />
+               </image>
+            </ImageView>
+            <ImageView>
+               <image>
+                  <Image url="@../../../../../Downloads/아이콘/character/icons8-super-mario-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label id="stext" layoutX="470.0" layoutY="371.0" text="* Esc 누르면 꺼집니다." />
+   </children>
+</Pane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" stylesheets="@login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.app.Login_controller">
+   <children>
+      <VBox id="left" alignment="CENTER" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Label text="KIT" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="69.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label text="기숙사 관리 시스템" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label text=" Kumoh National Institute of Technology." textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Regular" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="18.0" prefWidth="800.0" />
+            <VBox maxWidth="250.0" prefHeight="80.0" spacing="10.0">
+               <children>
+                  <JFXTextField id="id" fx:id="id" alignment="CENTER" focusColor="TRANSPARENT" prefHeight="25.0" prefWidth="250.0" unFocusColor="WHITE" />
+                  <JFXPasswordField id="pw" fx:id="pw" alignment="CENTER" focusColor="#73737300" prefHeight="25.0" prefWidth="250.0" unFocusColor="WHITE" />
+               </children>
+            </VBox>
+            <Pane prefHeight="64.0" prefWidth="800.0">
+               <children>
+                  <Label fx:id="state" alignment="CENTER" layoutX="209.0" layoutY="10.0" prefHeight="32.0" prefWidth="383.0" textFill="WHITE">
+                     <font>
+                        <Font name="Hancom Gothic Regular" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="800.0" spacing="30.0">
+               <children>
+                  <ImageView fx:id="login">
+                     <image>
+                        <Image url="@../util/image/icons8-sonic-the-hedgehog-50.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="close">
+                     <image>
+                        <Image url="@../util/image/icons8-cookie-monster-50.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

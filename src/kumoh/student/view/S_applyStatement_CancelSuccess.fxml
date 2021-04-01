@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="150.0" prefWidth="300.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.student.S_applyStatement_CancelSuccess">
+   <children>
+      <Label id="stitle" layoutX="73.0" layoutY="41.0" text="취소되었습니다!" />
+      <Button fx:id="button_close" layoutX="115.0" layoutY="85.0" mnemonicParsing="false" prefWidth="70.0" text="닫기" />
+   </children>
+</Pane>

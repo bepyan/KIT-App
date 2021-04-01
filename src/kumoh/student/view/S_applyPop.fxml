@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="150.0" prefWidth="300.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.student.S_applyPop">
+   <children>
+      <Label id="text" fx:id="failText" layoutX="56.0" layoutY="47.0" text="내용은 신청에서 정해줍니다." />
+      <Button fx:id="button_exit" layoutX="117.0" layoutY="87.0" mnemonicParsing="false" text="닫기" />
+   </children>
+</Pane>

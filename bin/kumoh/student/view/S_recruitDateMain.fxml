@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.student.S_recruitDateMain">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="110.0">
+         <children>
+            <Label id="logo" layoutX="14.0" layoutY="14.0" prefWidth="75.0" text="KIT" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="50.0" />
+               </font>
+            </Label>
+            <Pane layoutX="44.0" layoutY="121.0" prefHeight="480.0" prefWidth="9.0" style="-fx-background-color: #FFF;" />
+            <VBox alignment="CENTER" layoutX="14.0" layoutY="189.0" prefHeight="223.0" prefWidth="70.0" spacing="5.0" style="-fx-background-color: #03A9F4;">
+               <children>
+                  <ImageView id="icon" fx:id="applyStatement">
+                     <image>
+                        <Image url="@../../util/image/icons8-person-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="icon" fx:id="back">
+                     <image>
+                        <Image url="@../../util/image/icons8-go-back-52.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="icon" fx:id="logout">
+                     <image>
+                        <Image url="@../../util/image/icons8-exit-60.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Label id="slogo" layoutX="14.0" layoutY="75.0" prefHeight="17.0" prefWidth="96.0" text="기숙사관리시스템" textFill="WHITE" />
+            <Label id="stext" fx:id="date" layoutX="14.0" layoutY="89.0" text="2019-10-10" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="182.0" layoutY="89.0" spacing="5.0">
+         <children>
+            <Label id="text" text="공지사항" />
+            <TextArea fx:id="notice" editable="false" prefHeight="135.0" prefWidth="550.0" stylesheets="@../../util/scroll.css" text="김평안" wrapText="true" />
+         </children>
+      </VBox>
+      <HBox layoutX="174.0" layoutY="25.0" prefHeight="51.0" prefWidth="453.0">
+         <children>
+            <Label id="title" fx:id="this_year" text="xxxx" />
+            <Label id="title" text="년도">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label id="title" fx:id="this_term" text="xx">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label id="title" text="학기 모집일정정보">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <VBox layoutX="182.0" layoutY="258.0" spacing="5.0">
+         <children>
+            <Label id="text" text="일정" />
+            <TableView fx:id="schedule" prefHeight="280.0" prefWidth="550.0">
+              <columns>
+                <TableColumn fx:id="col_scheduleName" prefWidth="75.0" sortable="false" text="일정명" />
+                <TableColumn fx:id="col_scheduleStart" prefWidth="75.0" text="시작일" />
+                  <TableColumn fx:id="col_scheduleEnd" prefWidth="75.0" sortable="false" text="종료일" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <stylesheets>
+                  <URL value="@../../util/tableView.css" />
+                  <URL value="@../../util/scroll.css" />
+               </stylesheets>
+            </TableView>
+         </children>
+      </VBox>
+      <Button fx:id="apply" layoutX="661.0" layoutY="524.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: transparent;" text="신청" />
+      <Label id="stext" layoutX="61.0" layoutY="578.0" text="* 신청한 정보가 없으면 신청내역 버튼이 활성화되지 않습니다." />
+   </children>
+</Pane>

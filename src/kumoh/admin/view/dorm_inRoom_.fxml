@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.admin.Dorm_inRoom_">
+   <children>
+      <TableView fx:id="table" editable="true" layoutX="140.0" layoutY="96.0" prefHeight="420.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="room" prefWidth="233.0" text="호실번호" />
+            <TableColumn fx:id="bed" prefWidth="165.0" text="침대번호" />
+            <TableColumn fx:id="usable" prefWidth="139.0" text="가용여부" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <stylesheets>
+            <URL value="@../../util/tableView.css" />
+            <URL value="@../../util/scroll.css" />
+         </stylesheets>
+      </TableView>
+      <HBox layoutX="370.0" layoutY="531.0" spacing="20.0">
+         <children>
+            <Button fx:id="freeBed" mnemonicParsing="false" prefHeight="45.0" prefWidth="110.0" text="학기종료" />
+            <Button fx:id="alter" mnemonicParsing="false" prefHeight="45.0" prefWidth="110.0" text="상태변경" />
+            <Button fx:id="add" mnemonicParsing="false" prefHeight="45.0" prefWidth="110.0" text="추가" />
+         </children>
+      </HBox>
+      <Pane prefHeight="600.0" prefWidth="110.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefWidth="75.0" text="KIT" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="50.0" />
+               </font>
+            </Label>
+            <Pane layoutX="44.0" layoutY="116.0" prefHeight="75.0" prefWidth="9.0" style="-fx-background-color: #FFF;" />
+            <VBox alignment="CENTER" layoutX="13.0" layoutY="204.0" spacing="5.0">
+               <children>
+                  <ImageView id="icon" fx:id="back">
+                     <image>
+                        <Image url="@../../util/image/icons8-go-back-52.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="icon" fx:id="home">
+                     <image>
+                        <Image url="@../../util/image/icons8-home-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="icon" fx:id="logout">
+                     <image>
+                        <Image url="@../../util/image/icons8-exit-60.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Pane layoutX="44.0" layoutY="392.0" prefHeight="208.0" prefWidth="9.0" style="-fx-background-color: #FFF;" />
+            <Label layoutX="14.0" layoutY="75.0" prefHeight="17.0" prefWidth="96.0" text="기숙사관리시스템" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label id="title" fx:id="name" layoutX="140.0" layoutY="42.0" text="세부모집- 입실단위 관리" />
+   </children>
+</Pane>

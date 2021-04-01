@@ -1,0 +1,20 @@
+.lamp > *{
+	 -fx-font-family: "Hancom Gothic";
+	 -fx-font-weight: bold;
+	 -fx-font-size: 25;
+	 -fx-text-fill: #546e7a;
+	 -fx-image: url("image/pixar-lamp-2-50.png");
+}
+.lamp:hover > .image-view{
+	 -fx-image: url("image/pixar-lamp-50.png");
+}
+
+.lamp2 > *{
+	 -fx-font-family: "Hancom Gothic";
+	 -fx-font-weight: bold;
+	 -fx-font-size: 20;
+	 -fx-image: url("image/genie-lamp-50.png");
+}
+.lamp2:hover > .image-view{
+	 -fx-image: url("image/genie-lamp-50-2.png");
+}

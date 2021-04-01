@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="150.0" prefWidth="300.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.student.S_mainFail">
+   <children>
+      <Label id="stext" layoutX="27.0" layoutY="48.0" text="신청 기간이 아니거나 이미 신청 정보가 있습니다." />
+      <Button fx:id="button_OK" layoutX="117.0" layoutY="79.0" mnemonicParsing="false" text="확인" />
+   </children>
+</Pane>

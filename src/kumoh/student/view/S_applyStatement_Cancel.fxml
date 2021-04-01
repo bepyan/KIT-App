@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="150.0" prefWidth="300.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.student.S_applyStatement_Cancel">
+   <children>
+      <Label id="text" layoutX="19.0" layoutY="43.0" text="정말 생활관 신청을 취소하시겠습니까?" />
+      <Button fx:id="button_yes" layoutX="52.0" layoutY="82.0" mnemonicParsing="false" prefWidth="90.0" text="예" />
+      <Button fx:id="button_no" layoutX="158.0" layoutY="82.0" mnemonicParsing="false" prefWidth="90.0" text="아니오" />
+   </children>
+</Pane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="600.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.student.S_apply">
+   <children>
+      <CheckBox id="stext" fx:id="check_agree" layoutX="482.0" layoutY="176.0" mnemonicParsing="false" text="동의합니다." />
+      <TextArea fx:id="textArea_pledge" editable="false" layoutX="68.0" layoutY="88.0" prefHeight="80.0" prefWidth="500.0" />
+      <Label id="stitle" layoutX="32.0" layoutY="20.0" text="생활관 입사신청">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label id="text" layoutX="68.0" layoutY="61.0" text="&lt;입사서약서 동의 안내&gt; " />
+      <ComboBox fx:id="recruit_oneYear" layoutX="66.0" layoutY="267.0" prefWidth="150.0" promptText="모집명" visibleRowCount="5" />
+      <Label id="text" layoutX="68.0" layoutY="219.0" text="&lt;생활관 신청서 작성&gt;" />
+      <Label id="stext" layoutX="66.0" layoutY="249.0" text="1 년기숙" />
+      <ComboBox id="t" fx:id="meal_oneYear" layoutX="230.0" layoutY="267.0" prefWidth="150.0" promptText="식사선택" visibleRowCount="5" />
+      <Label id="stext" layoutX="433.0" layoutY="271.0" text="요금" />
+      <ComboBox fx:id="recruit_first" layoutX="66.0" layoutY="329.0" prefWidth="150.0" promptText="모집명" visibleRowCount="5" />
+      <Label id="stext" layoutX="66.0" layoutY="311.0" text="1 지망" />
+      <ComboBox fx:id="meal_first" layoutX="230.0" layoutY="329.0" prefWidth="150.0" promptText="식사선택" visibleRowCount="5" />
+      <Label id="stext" layoutX="433.0" layoutY="333.0" text="요금" />
+      <ComboBox fx:id="recruit_second" layoutX="66.0" layoutY="388.0" prefWidth="150.0" promptText="모집명" visibleRowCount="5" />
+      <Label id="stext" layoutX="66.0" layoutY="370.0" text="2 지망" />
+      <ComboBox fx:id="meal_second" layoutX="230.0" layoutY="388.0" prefWidth="150.0" promptText="식사선택" visibleRowCount="5" />
+      <Label id="stext" layoutX="433.0" layoutY="392.0" text="요금" />
+      <ComboBox fx:id="recruit_third" layoutX="66.0" layoutY="447.0" prefWidth="150.0" promptText="모집명" visibleRowCount="5" />
+      <Label id="stext" layoutX="66.0" layoutY="429.0" text="3 지망" />
+      <ComboBox fx:id="meal_third" layoutX="230.0" layoutY="447.0" prefWidth="150.0" promptText="식사선택" visibleRowCount="5" />
+      <Label id="stext" layoutX="433.0" layoutY="451.0" text="요금" />
+      <HBox layoutX="210.0" layoutY="517.0" spacing="20.0">
+         <children>
+            <Button fx:id="button_apply" mnemonicParsing="false" prefHeight="50.0" prefWidth="85.0" text="신청" />
+            <Button fx:id="button_exit" mnemonicParsing="false" prefHeight="50.0" prefWidth="85.0" text="닫기" />
+         </children>
+      </HBox>
+      <Label id="stext" fx:id="cost_oneYear" layoutX="482.0" layoutY="271.0" />
+      <Label id="stext" fx:id="cost_first" layoutX="482.0" layoutY="333.0" />
+      <Label id="stext" fx:id="cost_second" layoutX="482.0" layoutY="392.0" />
+      <Label id="stext" fx:id="cost_third" layoutX="482.0" layoutY="451.0" />
+      <Line endX="128.60003662109375" endY="-3.0517578125E-5" layoutX="435.0" layoutY="289.0" startX="-3.39996337890625" startY="-3.0517578125E-5" stroke="WHITE" />
+      <Line endX="128.60003662109375" endY="-3.0517578125E-5" layoutX="435.0" layoutY="351.0" startX="-3.39996337890625" startY="-3.0517578125E-5" stroke="WHITE" />
+      <Line endX="128.60003662109375" endY="-3.0517578125E-5" layoutX="435.0" layoutY="410.0" startX="-3.39996337890625" startY="-3.0517578125E-5" stroke="WHITE" />
+      <Line endX="128.60003662109375" endY="-3.0517578125E-5" layoutX="435.0" layoutY="469.0" startX="-3.39996337890625" startY="-3.0517578125E-5" stroke="WHITE" />
+      <Line endX="398.0" fill="#8282828a" layoutX="168.0" layoutY="200.0" startX="-100.0" stroke="#dddddd" />
+   </children>
+</Pane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.admin.Main">
+   <children>
+      <ImageView fitHeight="475.0" fitWidth="324.0" layoutX="476.0" layoutY="125.0" opacity="0.59">
+         <image>
+            <Image url="@../../util/image/superman.png" />
+         </image>
+      </ImageView>
+      <Pane>
+         <children>
+            <Label layoutX="95.0" layoutY="30.0" text="금오공과대학교" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="51.0" text="기숙사 관리 시스템" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="14.0" text="KIT" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="115.0" layoutY="300.0" spacing="1.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label fx:id="recruit" alignment="CENTER" prefHeight="100.0" prefWidth="190.0" styleClass="menu" text="모집 관리" textFill="WHITE" />
+                  <Label fx:id="dorm" alignment="CENTER" prefHeight="100.0" prefWidth="190.0" styleClass="menu" text="생활관 관리" textFill="WHITE" />
+                  <Label fx:id="logout" alignment="CENTER" prefHeight="100.0" prefWidth="190.0" styleClass="menu" text="로그아웃" textFill="WHITE" />
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="12.0" prefWidth="570.0" style="-fx-background-color: #FFF;" />
+         </children>
+      </VBox>
+      <Label layoutX="14.0" layoutY="569.0" text="* 종료하려면 로그아웃을 하시기 바랍니다" textFill="WHITE" />
+      <Label fx:id="date" layoutX="18.0" layoutY="107.0" text="2019.10.10" textFill="WHITE">
+         <font>
+            <Font name="Hancom Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="44.0" layoutY="78.0" text="관리자 님 환영합니다" textFill="WHITE">
+         <font>
+            <Font name="Hancom Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="15.0" layoutY="80.0">
+         <image>
+            <Image url="@../../util/image/icons8-person-24.png" />
+         </image>
+      </ImageView>
+      <Label id="text" fx:id="about" alignment="CENTER" layoutX="718.0" layoutY="560.0" prefHeight="35.0" prefWidth="75.0" text="about">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.student.S_applyStatement">
+   <children>
+      <Label id="title" layoutX="187.0" layoutY="42.0" text="나의 생활관 신청정보">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <GridPane hgap="5.0" layoutX="214.0" layoutY="108.0" vgap="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label id="text" text="요금" GridPane.columnIndex="3" />
+            <Label id="text" text="1년기숙" GridPane.rowIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label id="text" text="모집명" GridPane.columnIndex="1" />
+            <Label id="text" text="식사정보" GridPane.columnIndex="2" />
+            <Label id="text" text="1 지망" GridPane.rowIndex="2" />
+            <Label id="text" text="2 지망" GridPane.rowIndex="3" />
+            <Label id="text" text="3 지망" GridPane.rowIndex="4" />
+            <Label id="text" fx:id="recruit_oneYear" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label id="text" fx:id="meal_oneYear" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label id="text" fx:id="cost_oneYear" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label id="text" fx:id="recruit_first" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="text" fx:id="meal_first" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label id="text" fx:id="cost_first" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label id="text" fx:id="recruit_second" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="text" fx:id="meal_second" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label id="text" fx:id="recruit_third" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label id="text" fx:id="cost_second" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label id="text" fx:id="meal_third" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label id="text" fx:id="cost_third" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+      <Line endX="377.800048828125" layoutX="287.0" layoutY="309.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="377.800048828125" layoutX="287.0" layoutY="95.0" startX="-100.0" stroke="WHITE" />
+      <VBox layoutX="184.0" layoutY="325.0" prefHeight="72.0" prefWidth="550.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="25.0" prefWidth="500.0">
+               <children>
+                  <Label id="stitle" prefWidth="120.0" text="선발여부 : " />
+                  <Label id="text" fx:id="selectionView" prefHeight="31.0" prefWidth="300.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="500.0">
+               <children>
+                  <Label id="stitle" prefHeight="31.0" prefWidth="220.0" text="결핵진단서 제출여부: " />
+                  <Label id="text" fx:id="sheetView" prefHeight="31.0" prefWidth="300.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane prefHeight="600.0" prefWidth="110.0">
+         <children>
+            <Label id="logo" layoutX="14.0" layoutY="14.0" prefWidth="75.0" text="KIT" textFill="WHITE">
+               <font>
+                  <Font name="Hancom Gothic Bold" size="50.0" />
+               </font>
+            </Label>
+            <Pane layoutX="44.0" layoutY="121.0" prefHeight="480.0" prefWidth="9.0" style="-fx-background-color: #FFF;" />
+            <VBox alignment="CENTER" layoutX="14.0" layoutY="233.0" prefHeight="135.0" prefWidth="70.0" spacing="5.0" style="-fx-background-color: #03A9F4;">
+               <children>
+                  <ImageView id="icon" fx:id="back">
+                     <image>
+                        <Image url="@../../util/image/icons8-go-back-52.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="icon" fx:id="logout">
+                     <image>
+                        <Image url="@../../util/image/icons8-exit-60.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Label id="slogo" layoutX="14.0" layoutY="75.0" prefHeight="17.0" prefWidth="96.0" text="기숙사관리시스템" textFill="WHITE" />
+         </children>
+      </Pane>
+      <ImageView id="icon" fx:id="invoiceView" layoutX="204.0" layoutY="447.0">
+         <image>
+            <Image url="@../../util/image/icons8-check-100.png" />
+         </image>
+      </ImageView>
+      <ImageView id="icon" fx:id="sheetSubmit" layoutX="324.0" layoutY="447.0">
+         <image>
+            <Image url="@../../util/image/icons8-health-checkup-100.png" />
+         </image>
+      </ImageView>
+      <ImageView id="icon" fx:id="roomView" layoutX="444.0" layoutY="447.0">
+         <image>
+            <Image url="@../../util/image/icons8-reflection-100.png" />
+         </image>
+      </ImageView>
+      <ImageView id="icon" fx:id="applyCancel" layoutX="564.0" layoutY="447.0">
+         <image>
+            <Image url="@../../util/image/icons8-cancel-subscription-100.png" />
+         </image>
+      </ImageView>
+      <Label id="text" layoutX="214.0" layoutY="553.0" text="* 기간에 해당되면 표시됩니다" />
+   </children>
+</Pane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="150.0" prefWidth="500.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.student.S_applyStatement_sheetSubmit">
+   <children>
+      <HBox layoutX="14.0" layoutY="47.0" spacing="10.0">
+         <children>
+            <TextField fx:id="sheetFilePath" editable="false" prefHeight="25.0" prefWidth="355.0" promptText="파일을 등록해주세요" />
+            <Button fx:id="button_findSheet" mnemonicParsing="false" styleClass="sbutton" text="파일찾기" />
+            <Button fx:id="button_deleteSheet" mnemonicParsing="false" styleClass="sbutton" text="삭제" />
+         </children>
+      </HBox>
+      <HBox layoutX="179.0" layoutY="89.0" spacing="10.0">
+         <children>
+            <Button fx:id="button_uploadSheet" mnemonicParsing="false" text="등록" />
+            <Button fx:id="button_exit" mnemonicParsing="false" text="닫기" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="200.0" prefWidth="400.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.admin.Dorm_inRoom_add">
+   <children>
+      <VBox layoutX="89.0" layoutY="24.0" spacing="12.0">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label id="text" text="호실번호" />
+                  <TextField fx:id="room" alignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label id="text" text="침대번호" />
+                  <TextField fx:id="bed" alignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label id="text" text="가용여부" />
+                  <TextField fx:id="valid" alignment="CENTER" text="Y" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="add" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="추가" />
+                  <Button fx:id="cancel" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="취소" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

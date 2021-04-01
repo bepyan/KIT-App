@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@../../util/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kumoh.admin.Recruit_showApply">
+   <children>
+      <Label id="stitle" layoutX="89.0" layoutY="40.0" text="신청자 조회" />
+      <TableView fx:id="table" layoutX="20.0" layoutY="80.0" prefHeight="500.0" prefWidth="760.0">
+         <columns>
+            <TableColumn fx:id="sid" maxWidth="120.0" minWidth="-1.0" resizable="false" sortable="false" text="학번" />
+            <TableColumn maxWidth="160.0" minWidth="-1.0" prefWidth="120.0" resizable="false" text="점수">
+               <columns>
+                  <TableColumn fx:id="gpa" maxWidth="80.0" minWidth="-1.0" prefWidth="75.0" resizable="false" sortable="false" text="GPA" />
+                  <TableColumn fx:id="distance" maxWidth="80.0" minWidth="-1.0" prefWidth="40.0" resizable="false" sortable="false" text="거리" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="year" maxWidth="110.0" minWidth="-1.0" prefWidth="120.0" resizable="false" sortable="false" text="1년" />
+            <TableColumn fx:id="first" maxWidth="110.0" minWidth="-1.0" prefWidth="120.0" resizable="false" sortable="false" text="1지망" />
+            <TableColumn fx:id="second" maxWidth="110.0" minWidth="-1.0" prefWidth="120.0" resizable="false" sortable="false" text="2지망" />
+            <TableColumn fx:id="third" maxWidth="110.0" minWidth="-1.0" prefWidth="120.0" resizable="false" sortable="false" text="3지망" />
+            <TableColumn fx:id="vaild" maxWidth="155.0" minWidth="-1.0" prefWidth="110.0" resizable="false" sortable="false" text="취소일시" />
+         </columns>
+         <stylesheets>
+            <URL value="@../../util/tableView.css" />
+            <URL value="@../../util/scroll.css" />
+         </stylesheets>
+      </TableView>
+      <ImageView id="icon" fx:id="back" fitHeight="40.0" fitWidth="50.0" layoutX="736.0" layoutY="29.0">
+         <image>
+            <Image url="@../../util/image/icons8-back-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="0.0" prefWidth="75.0" text="KIT" textFill="WHITE">
+         <font>
+            <Font name="Hancom Gothic Bold" size="50.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

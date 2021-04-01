@@ -1,0 +1,22 @@
+.list-view{
+	-fx-focus-color: transparent;
+	-fx-font-family: "Hancom Gothic";
+	-fx-font-size: 18;
+	-fx-border-color: #03A9F4;
+    -fx-background-color: #FFF;
+}
+.list-cell{
+	-fx-cell-size: 70;
+	-fx-background-color: #FFF;
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #03A9F4;
+	-fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #03A9F4;
+	-fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+}
